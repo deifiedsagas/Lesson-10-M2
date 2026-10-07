@@ -1,0 +1,178 @@
+html {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #82868E;
+    color: #000000;
+    background-image: url(/static/images/noise.png);
+    scroll-behavior: smooth;
+}
+
+p {
+  color: black;
+  background-color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* если включена темная тема */
+  p {
+    color: white;
+    background-color: black;
+  }
+}
+
+.Silly {
+    background-color: #ffffff44;
+    border: thick solid #fdfbfb33;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: fancy;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.Silly:hover {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    transition: border-color 0.2s, box-shadow 0.2s;
+    animation: spin 0.5s infinite reverse linear;
+}
+
+.Silly:active {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    transition: border-color 0.1s, box-shadow 0.1s;
+}
+.CHEZ {
+    background-color: #ffe600;
+    border: thick solid #ffe6004d;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: fancy;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.CHEZ:hover {
+    background-color: #fffb00;
+    color: rgba(219, 181, 10, 0.575);
+    transition: border-color 0.2s, box-shadow 0.2s;
+    animation: spin 600s infinite linear;
+}
+
+.CHEZ:active {
+    background-color: #b4a51fa2;
+    color: rgb(255, 251, 0);
+    transition: border-color 0.1s, box-shadow 0.1s;
+}
+
+.cheesy_idk {
+    font-family: 'Fancy', cursive, sans-serif;
+    display: inline-block;
+    animation: flip 0.85s ease-in-out infinite;
+}
+
+.wannatype_phukbutton:active {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: thick solid #404042;
+    transition: border-color 0.1s, box-shadow 0.1s;
+}
+
+.wannatype_phukbutton:hover {
+    background-color: #289108;
+    color: rgb(255, 255, 255);
+    border: thick solid #703606;
+    transition: border-color 0.1s, box-shadow 0.1s;
+}
+
+.wannatype_phuk:active {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: thick solid #404042;
+    transition: border-color 0.1s, box-shadow 0.1s;
+}
+
+.wannatype_phuk:hover {
+    background-color: #0502b6;
+    color: rgb(255, 255, 255);
+    border: thick solid #434344;
+    transition: border-color 0.1s, box-shadow 0.1s;
+}
+
+.wannatype_phuk {
+    font-family: 'Wannatype', cursive, sans-serif;
+    display: inline-block;
+    animation: in_choosing 0.45s ease-in-out infinite;
+}
+
+@keyframes in_choosing {
+    0% { transform: perspective(400px) rotateX(0deg); }
+    25% { transform: perspective(400px) rotateX(90deg); }
+    50% { transform: perspective(400px) rotateX(180deg); }
+    75% { transform: perspective(400px) rotateX(270deg); }
+    100% { transform: perspective(400px) rotateX(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(90deg); }
+    50% { transform: rotate(180deg); }
+    75% { transform: rotate(270deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.2); }
+    50% { transform: scale(1.5); }
+    75% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+@keyframes flip {
+    0% { transform: perspective(400px) rotateY(0deg); }
+    25% { transform: perspective(400px) rotateY(90deg); }
+    50% { transform: perspective(400px) rotateY(180deg); }
+    75% { transform: perspective(400px) rotateY(270deg); }
+    100% { transform: perspective(400px) rotateY(360deg); }
+}
+
+.loader {
+  --color-1: #fff;
+  --size: 0.7px;
+  --position: absolute;
+  --top: 50%;
+  --left: 50%;
+  --transform: translate(-50%, -50%);
+  --font-size: 1.5rem;
+  --color: var(--color-1);
+}
+
+.meme-container {
+    position: relative;
+    display: inline-block;
+}
+
+.meme-text {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 0 #000;
+    text-align: center;
+    width: 100%;
+}

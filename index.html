@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <title>Page1: Portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav main-nav">
+        <ul class="main-nav__list main-list">
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#home">HOME</a>
+          </li>
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#about">ABOUT</a>
+          </li>
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#skills">MY SKILLS</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <!-- Секция превью -->
+      <section class="main__home home" id="home">
+        <h1 class="home__title">Mark</h1>
+        <p class="home__subtitle">WEB-DEVELOPER, PYTHON PROGRAMMER</p>
+      </section>
+      <!-- Секция с рассказом о себе -->
+      <section class="main__about about" id="about">
+        <h2 class="about__title">ABOUT ME</h2>
+        <div class="about__info info-block">
+          <p class="info-block__text">
+            Hello! I'm Mark Tsatska, A passionate web developer, Unfortunately, I lack experience and more complicated and advanced python knowledge, I Can work around 1-2 days a week, It depends mostly on my free time, Currently I am looking for a job or a hire, I'm happy to nagotiate! By the way the lowest payment I accept
+            Is around 5$ per month, It mostly depends on the project, The harder and more complicated it is, More I'll demand, But I guess 250$ per month Is the highest payment I will
+            accept, Because it's enough. I guess If I'll work for free If i would really be interested in the project, More information on my Discord, Which Is In the html project I made (My first one)       
+          </p>
+          <img
+            class="info-block__img"
+            src="../static/img/profile.png"
+            alt="me"
+            width="250"
+            height="250"
+          />
+        </div>
+      </section>
+      <!-- Секция со скиллами -->
+      <section class="main__skills skills" id="skills">
+        <h2 class="skills__title">MY SKILLS</h2>
+        <form action="/" method="POST">
+          <ul class="skills__list skills-list">
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="../static/img/python.png"
+                alt="python"
+                width="150"
+                height="150"
+              />
+              <span class="skill__info">First project (Made with flask, around 4 months ago by the time im writing this)</span>
+              <input class="skill__button" type="submit" name="button_python" value="SHOW PROJECT">
+            </li>
+            
+              
+      <!-- Секция с формой обратной связи -->
+      <section class="main__feedback feedback" id="feedback">
+        <h2 class="feedback__title">FEEDBACK</h2>
+        <form action="" method="POST" class="feedback__form form">
+          <label for="email">
+            <input type="email" class="form__input" name="email" id="email" placeholder="Введите E-mail" required>
+          </label>
+          <label for="text">
+            <textarea name="text" class="form__input" id="text" cols="70" rows="10" required placeholder="Комментарий"></textarea>
+          </label>
+          <button class="form__button" type="submit">SEND</button>
+        </form>
+      </section>
+    </main>
+    <!-- Подвал для ссылок на соц-сети -->
+    <footer>
+
+    </footer>
+  </body>
+</html>
